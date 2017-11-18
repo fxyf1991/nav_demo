@@ -37,6 +37,10 @@
             'm': 'meitu.com'
         }
 
+        var hashInLocalStorage = JSON.parse(localStorage.getItem('zzz' || ''))
+        if(hashInLocalStorage){
+            hash = hashInLocalStorage
+        }
         index = 0
         while(index <　keys['length']){
             div1xxx = document.createElement('div')
